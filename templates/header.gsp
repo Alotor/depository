@@ -9,7 +9,7 @@
         <meta name="author" content=""/>
         <meta name="keywords" content=""/>
 
-        <link href="/css/main.css" rel="stylesheet"/>
+        <link href="<%if (content.rootpath) {%>${content.rootpath}<% } else { %><% }%>css/main.css" rel="stylesheet"/>
         <!--
         <link href="/oldcss/prettify.css" rel="stylesheet"/>
         <link href="/oldcss/asciidoctor.css" rel="stylesheet"/>
