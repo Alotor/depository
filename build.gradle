@@ -1,0 +1,50 @@
+buildscript {
+    repositories {
+        jcenter()
+        maven {
+            url "https://dl.bintray.com/calmdev/gradle-plugins"
+        }
+        maven {
+            url "https://dl.bintray.com/robfletcher/gradle-plugins"
+        }
+    }
+
+    dependencies {
+        classpath 'me.champeau.gradle:jbake-gradle-plugin:0.2.1'
+        classpath 'com.bluepapa32:gradle-watch-plugin:0.1.5'
+        classpath "com.github.robfletcher:compass-gradle-plugin:2.0.5"
+    }
+}
+
+apply plugin: 'me.champeau.jbake'
+apply plugin: 'com.bluepapa32.watch'
+apply plugin: "com.github.robfletcher.compass"
+
+jbake {
+    version = '2.4.0'
+    pegdownVersion = '1.4.2'
+    asciidoctorjVersion = '1.5.2'
+
+    srcDirName  = '.'
+    destDirName = 'output'
+}
+
+watch {
+    content {
+        files fileTree(dir: 'content', exclude: '**/.#*') +
+              fileTree(dir: 'templates', exclude: '**/.#*')
+        tasks 'jbake'
+    }
+
+    styles {
+        files fileTree(dir: 'assets/scss', exclude: '**/.#')
+        tasks 'compassCompile'
+    }
+}
+
+compass {
+    cssDir = file("build/output/css")
+    sassDir = file("assets/scss")
+    debugInfo = true
+    sourcemap = true
+}

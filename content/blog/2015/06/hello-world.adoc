@@ -1,0 +1,162 @@
+:title: Hello World
+:author: Alonso Torres
+:date: 2015-06-08
+:type: post
+:status: published
+:jbake-tags: blog,asciidoc
+
+include::hello-world.intro.adoc[]
+
+== Some source code examples
+
+[source, groovy]
+----
+class Test {
+    public static void main(String[] args) {
+        println "HELLO WORLD"
+    }
+}
+----
+
+
+[source, java]
+----
+public class Test {
+    public static void main(String[] args) {
+        System.out.println("HELLO WORLD"); // <1>
+    }
+}
+----
+
+
+[source, clojure]
+----
+(ns ghoul.parser.rss
+  (:require [cljs-time.format :as format] ; <1>
+            [cljs-time.coerce :as coerce] ; <2>
+            [cuerdas.core :as str]))
+
+(println "test")
+----
+<1> Callout for A
+<2> Callout for B
+
+WARNING: Un warning!
+
+TIP: Un tip!
+
+
+== Other nices features
+
+=== Lists
+
+* An element
+** Other
+*** Third
+*** Third
+*** Third
+** Other
+*** Third
+*** Third
+*** Third
+* Other element
+** Other
+** Other
+
+=== Ordered lists
+
+. Numbered uno
+.. Other
+... Third
+... Third
+... Third
+... Third
+.. Another
+. Numbered dos
+
+=== TODO list
+
+- [*] checked
+- [x] also checked
+- [ ] not checked
+-     normal list item
+
+=== Questions and answers
+[qanda]
+What is Asciidoctor?::
+An implementation of the AsciiDoc processor in Ruby.
+
+What is the answer to the Ultimate Question?:: 42
+
+
+=== Tables
+
+[cols="2", options="header"]
+|===
+|Application
+|Language
+
+|AsciiDoc
+|Python
+
+|Asciidoctor
+|Ruby
+|===
+
+
+=== Links
+
+http://asciidoctor.org - automatic!
+
+http://asciidoctor.org[Asciidoctor]
+
+https://github.com/asciidoctor[Asciidoctor @ *GitHub*]
+
+=== Multimedia
+
+image::http://asciidoctor.org/images/octocat.jpg[GitHub mascot]
+
+video::rPQoq7ThGAU[youtube]
+
+
+=== Notes
+
+.AsciiDoc history
+****
+AsciiDoc was first released in Nov 2002 by Stuart Rackham.
+It was designed from the start to be a shorthand syntax
+for producing professional documents like DocBook and LaTeX.
+****
+
+
+[NOTE]
+====
+An admonition block may contain complex content.
+
+.A list
+- one
+- two
+- three
+
+Another paragraph.
+====
+
+=== Quotes
+
+[quote, Abraham Lincoln, Address delivered at the dedication of the Cemetery at Gettysburg]
+____
+Four score and seven years ago our fathers brought forth
+on this continent a new nation...
+____
+
+
+[, Richard M. Nixon]
+""
+When the President does it, that means that it's not illegal.
+""
+
+
+++++
+<script src="http://gist.github.com/mojavelinux/5333524.js">
+</script>
+++++
