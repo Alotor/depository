@@ -1,7 +1,3 @@
-<div class="page-header">
-    <h1>Blog</h1>
-</div>
-
 <%summarys.each { post ->%>
     <h1>${post.title}</h1>
     <p>${post.date}</p>
