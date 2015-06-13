@@ -1,0 +1,403 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Hello World</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content=""/>
+        <meta name="author" content=""/>
+        <meta name="keywords" content=""/>
+
+        <link href="../../../css/main.css" rel="stylesheet"/>
+
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+        <script src="../../../js/html5shiv.min.js"></script>
+        <![endif]-->
+
+        <link rel="shortcut icon" href="../../../favicon.ico">
+    </head>
+    <body onload="prettyPrint()">
+        <header>
+            <div class="container">
+                <h1>Depository</h1>
+                <nav>
+                    <a class="menu articles"href="#">Articles</a>
+                    <a class="menu opinion"href="#">Opinion</a>
+                    <a class="menu talks"href="#">Talks</a>
+                    <a class="menu about"href="#">About me</a>
+                </nav>
+            </div>
+        </header>
+
+        <div id="wrap">
+            <div class="container">
+                <div class="page-header">
+    <h1>Hello World</h1>
+</div>
+
+<p><em>2015-06-08</em></p>
+
+<p><div class="paragraph">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel diam purus. Curabitur ut nisi lacus.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://example.org" class="bare">http://example.org</a></p>
+</li>
+<li>
+<p><a href="http://example.org">Example.org</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Nam id nisl quam. Donec a lorem sit amet libero pretium vulputate vel ut purus. Suspendisse leo arcu,
+mattis et imperdiet luctus, pulvinar vitae mi. Quisque fermentum sollicitudin feugiat. Mauris nec leo
+ligula. Vestibulum tristique odio ut risus ultricies a hendrerit quam iaculis. Duis tempor elit sit amet
+ligula vehicula et iaculis sem placerat. Fusce dictum, metus at volutpat lacinia, elit massa auctor risus,
+id auctor arcu enim eu augue. Donec ultrices turpis in mi imperdiet ac venenatis sapien sodales. In
+consequat imperdiet nunc quis bibendum. Nulla semper, erat quis ornare tristique, lectus massa posuere
+libero, ut vehicula lectus nunc ut lorem. Aliquam erat volutpat.</p>
+</div>
+<div class="sect1">
+<h2 id="_some_source_code_examples">Some source code examples</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-groovy" data-lang="groovy">class Test {
+    public static void main(String[] args) {
+        println "HELLO WORLD"
+    }
+}</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-java" data-lang="java">public class Test {
+    public static void main(String[] args) {
+        System.out.println("HELLO WORLD"); <b class="conum">(1)</b>
+    }
+}</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-clojure" data-lang="clojure">(ns ghoul.parser.rss
+  (:require [cljs-time.format :as format] ; <b class="conum">(1)</b>
+            [cljs-time.coerce :as coerce] ; <b class="conum">(2)</b>
+            [cuerdas.core :as str]))
+
+(println "test")</code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<ol>
+<li>
+<p>Callout for A</p>
+</li>
+<li>
+<p>Callout for B</p>
+</li>
+</ol>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Warning</div>
+</td>
+<td class="content">
+Un warning!
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Tip</div>
+</td>
+<td class="content">
+Un tip!
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_other_nices_features">Other nices features</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_lists">Lists</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>An element</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Other</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Third</p>
+</li>
+<li>
+<p>Third</p>
+</li>
+<li>
+<p>Third</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Other</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Third</p>
+</li>
+<li>
+<p>Third</p>
+</li>
+<li>
+<p>Third</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Other element</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Other</p>
+</li>
+<li>
+<p>Other</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_ordered_lists">Ordered lists</h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Numbered uno</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Other</p>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
+<li>
+<p>Third</p>
+</li>
+<li>
+<p>Third</p>
+</li>
+<li>
+<p>Third</p>
+</li>
+<li>
+<p>Third</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Another</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Numbered dos</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_todo_list">TODO list</h3>
+<div class="ulist checklist">
+<ul class="checklist">
+<li>
+<p>&#10003; checked</p>
+</li>
+<li>
+<p>&#10003; also checked</p>
+</li>
+<li>
+<p>&#10063; not checked</p>
+</li>
+<li>
+<p>normal list item</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_questions_and_answers">Questions and answers</h3>
+<div class="qlist qanda">
+<ol>
+<li>
+<p><em>What is Asciidoctor?</em></p>
+<p>An implementation of the AsciiDoc processor in Ruby.</p>
+</li>
+<li>
+<p><em>What is the answer to the Ultimate Question?</em></p>
+<p>42</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_tables">Tables</h3>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Application</th>
+<th class="tableblock halign-left valign-top">Language</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">AsciiDoc</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Python</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Asciidoctor</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ruby</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_links">Links</h3>
+<div class="paragraph">
+<p><a href="http://asciidoctor.org" class="bare">http://asciidoctor.org</a> - automatic!</p>
+</div>
+<div class="paragraph">
+<p><a href="http://asciidoctor.org">Asciidoctor</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://github.com/asciidoctor">Asciidoctor @ <strong>GitHub</strong></a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_multimedia">Multimedia</h3>
+<div class="imageblock">
+<div class="content">
+<img src="http://asciidoctor.org/images/octocat.jpg" alt="GitHub mascot">
+</div>
+</div>
+<div class="videoblock">
+<div class="content">
+<iframe src="//www.youtube.com/embed/rPQoq7ThGAU?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_notes">Notes</h3>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">AsciiDoc history</div>
+<div class="paragraph">
+<p>AsciiDoc was first released in Nov 2002 by Stuart Rackham.
+It was designed from the start to be a shorthand syntax
+for producing professional documents like DocBook and LaTeX.</p>
+</div>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>An admonition block may contain complex content.</p>
+</div>
+<div class="ulist">
+<div class="title">A list</div>
+<ul>
+<li>
+<p>one</p>
+</li>
+<li>
+<p>two</p>
+</li>
+<li>
+<p>three</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Another paragraph.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_quotes">Quotes</h3>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Four score and seven years ago our fathers brought forth
+on this continent a new nation&#8230;&#8203;</p>
+</div>
+</blockquote>
+<div class="attribution">
+&#8212; Abraham Lincoln<br>
+<cite>Address delivered at the dedication of the Cemetery at Gettysburg</cite>
+</div>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>When the President does it, that means that it&#8217;s not illegal.</p>
+</div>
+</blockquote>
+<div class="attribution">
+&#8212; Richard M. Nixon
+</div>
+</div>
+<script src="http://gist.github.com/mojavelinux/5333524.js">
+</script>
+</div>
+</div>
+</div></p>
+
+<hr />
+
+            </div>
+        </div>
+
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/prettify.js"></script>
+    </body>
+</html>
+
+
